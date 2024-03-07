@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">LINK</a></li>
+                <li><a class="hideOnMobile" href="#products">Products</a></li>
+                <li><a class="hideOnMobile" href="#">LINK</a></li>
+                <li><a class="hideOnMobile" href="#">LINK</a></li>
+                <li class="menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fixed-search">
+        <button><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+        <!-- there is no search method :( -->
+
+    </div>
+    <div id="products" class="product-container">
+        <div class="product">
+            <p class="name">Product1</p>
+            <img src="/data/product1.jpg" alt="Cloth">
+            <div class="info">
+            <p class="price">100</p>
+            <button class="btn">BUY</button>
+            </div>
+            <div class="hidden">
+                    <button>Show Info</button>
+            </div>
+        </div>
+        <div class="product">
+            <p class="name">Product2</p>
+            <img src="/data/product1.jpg" alt="Cloth">
+            <div class="info">
+                <p class="price">100</p>
+                <button class="btn">BUY</button>
+            </div>
+            <div class="hidden">
+                    <button>Show Info</button>
+            </div>
+        </div>        
+        <div class="product">
+            <p class="name">Product3</p>
+            <img src="/data/product1.jpg" alt="Cloth">
+            <div class="info">
+                <p class="price">100</p>
+                <button class="btn">BUY</button>
+            </div>
+            <div class="hidden">
+                    <button>Show Info</button>
+            </div>
+        </div>        
+        <div class="product">
+            <p class="name">Product4</p>
+            <img src="/data/product1.jpg" alt="Cloth">
+            <div class="info">
+                <p class="price">100</p>
+                <button class="btn">BUY</button>
+            </div>
+            <div class="hidden">
+                    <button>Show Info</button>
+            </div>
+        </div>       
+        <div class="product">
+            <p class="name">Product5</p>
+            <img src="/data/product1.jpg" alt="Cloth">
+            <div class="info">
+                <p class="price">100</p>
+                <button class="btn">BUY</button>
+            </div>
+            <div class="hidden">
+                <button>Show Info</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    
+
+
+    <div class="copyrights">
+        <ul class="links">
+            <li><a href="#">Privacy</a></li> 
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div><p>Copyright 2024 , Mohamed Amer</p></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
